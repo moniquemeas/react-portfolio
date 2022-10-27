@@ -35,8 +35,7 @@ function App() {
       <main>
         <Nav 
         activeSection={activeSection} setActiveSection={setActiveSection}
-        
-        />
+      />
         {renderPage()}
       </main>   
       <Footer />

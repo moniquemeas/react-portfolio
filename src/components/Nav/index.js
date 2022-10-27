@@ -15,24 +15,28 @@ function Nav({activeSection, setActiveSection}) {
     <h1 id="name">Monique Meas</h1>
     <div className='container'>
     <ul className="links">
-      <li className={`inactive ${isActive ? 'navActive' : ''}`}
+      <li className={`"inactive"${isActive && 'navActive'}`}
       onClick={()=> 
         {handleClick()
           setActiveSection('about')}}>
        About Me
       </li>
-      <li 
-      onClick={()=> setActiveSection('projects')}>
+      <li  className={`"inactive"${isActive && 'navActive'}`}
+      onClick={()=> {
+        handleClick()
+        setActiveSection('projects')}}>
       Projects
       </li>
-      <li 
+      <li className={`"inactive"${isActive && 'navActive'}`}
       onClick={()=> 
-        setActiveSection('resume')}>
+        {handleClick()
+          setActiveSection('resume')}}>
       Resume
       </li>
-      <li 
+      <li className={`"inactive"${isActive && 'navActive'}`}
       onClick={()=> 
-        setActiveSection('contact')}>
+        {handleClick()
+          setActiveSection('contact')}}>
       Contact
       </li>
       
