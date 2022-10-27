@@ -1,27 +1,32 @@
+
 import React from 'react';
 
-function Nav() {
+function Nav({activeSection, setActiveSection}) {
+  console.log(activeSection)
 
   return (
    
    <nav>
-    <h1>Monique Meas</h1>
-    <ul className="flex-row">
-      <li className="mx-2">
-        <a href="#about">
-          About me
-        </a>
+    <header>
+    <h1 id="name">Monique Meas</h1>
+    <div className='container'>
+    <ul className="links">
+      <li onClick={()=> setActiveSection('about')}>
+       About Me
       </li>
-      <li>
-        <span>Portfolio</span>
+      <li onClick={()=> setActiveSection('projects')}>
+      Projects
       </li>
-      <li>
-        <span>Contact</span>
+      <li onClick={()=> setActiveSection('resume')}>
+      Resume
       </li>
-      <li>
-        <span>Resume</span>
+      <li onClick={()=> setActiveSection('contact')}>
+      Contact
       </li>
+      
     </ul>
+    </div>
+    </header>
   </nav>
 
   );
