@@ -8,10 +8,11 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 
+
 function App() {
 
   const [activeSection, setActiveSection] = useState("about")
-  
+
   const renderPage = () => {
     switch (activeSection) {
       case "projects":
@@ -32,7 +33,10 @@ function App() {
   return (
     <div>
       <main>
-        <Nav activeSection={activeSection} setActiveSection={setActiveSection}/>
+        <Nav 
+        activeSection={activeSection} setActiveSection={setActiveSection}
+        
+        />
         {renderPage()}
       </main>   
       <Footer />

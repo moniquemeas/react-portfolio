@@ -1,9 +1,13 @@
-
-import React from 'react';
+import React, {useState} from 'react';
+import classNames from 'classnames';
 
 function Nav({activeSection, setActiveSection}) {
-  console.log(activeSection)
 
+  const [isActive, setIsActive] = useState(false)
+  
+  const handleClick = () => {
+    setIsActive(!isActive)
+  }
   return (
    
    <nav>
@@ -11,16 +15,24 @@ function Nav({activeSection, setActiveSection}) {
     <h1 id="name">Monique Meas</h1>
     <div className='container'>
     <ul className="links">
-      <li onClick={()=> setActiveSection('about')}>
+      <li className={`inactive ${isActive ? 'navActive' : ''}`}
+      onClick={()=> 
+        {handleClick()
+          setActiveSection('about')}}>
        About Me
       </li>
-      <li onClick={()=> setActiveSection('projects')}>
+      <li 
+      onClick={()=> setActiveSection('projects')}>
       Projects
       </li>
-      <li onClick={()=> setActiveSection('resume')}>
+      <li 
+      onClick={()=> 
+        setActiveSection('resume')}>
       Resume
       </li>
-      <li onClick={()=> setActiveSection('contact')}>
+      <li 
+      onClick={()=> 
+        setActiveSection('contact')}>
       Contact
       </li>
       

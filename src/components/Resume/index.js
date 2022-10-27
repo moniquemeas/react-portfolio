@@ -5,17 +5,17 @@ function Resume() {
     
     <div>
         <h1>Resume</h1>
-        <a href="../../assets/Monique.Meas.Resume.pdf" download="Monique.Meas.Resume.pdf">Download My Resume</a>
-    <div className='container my-5'>
-    <ul className="links">
+        <a href="../../assets/Monique.Meas.Resume.pdf" download="Monique.Meas.Resume.pdf">Click Here to Download My Resume</a>
+    <div className='my-5'>
+    <ul className='resume'>
       <li>
         <h2>Education</h2>
         <h4>Bachelor Degree in Computer Science</h4>
-        <p>2011</p>
-        <p>University of Phoenix</p>
+        <p>2011 - University of Phoenix</p>
+        
         <h4>Associate Degree in Computer Science</h4>
-        <p>2009</p>
-        <p>San Diego Community College</p>
+        <p>2009 - San Diego Community College</p>
+       
       </li>
       
       <li>
@@ -25,9 +25,9 @@ function Resume() {
         <p>AWS Certified Cloud Practitioner (2025)</p>
         <p>Cisco Meraki</p>
         <p>VeloCloud SDWAN</p>
-        <p>Frontend development (HTML, CSS and JavaScript)</p>
-        <p>Node.js</p>
-        <p>MySQL</p>
+        <p>Frontend development (HTML, CSS and JavaScript), REACT</p>
+        <p>Database (MySQL, MongoDB, GraphQL)</p>
+        <p>Backend development (Node.js; express.js)</p>
 
       </li>
       
