@@ -26,7 +26,19 @@ function Projects() {
       name: "Weather App",
       image: "img3.jpg",
       url: "https://moniquemeas.github.io/Weather-Dashboard/"
-  }
+  },
+  {
+    id: 5,  
+    name: "Note Taker App",
+    image: "img4.jpg",
+    url: "https://note-taker-meas.herokuapp.com/"
+},
+{
+  id: 6,  
+  name: "Just Anoter Text Editor",
+  image: "img5.jpg",
+  url: "https://intense-springs-58376.herokuapp.com/"
+}
   ]
   return (
     <>

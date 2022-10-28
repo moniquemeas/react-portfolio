@@ -37,7 +37,7 @@ const handleChange = (e) => {
   }
 }
   return (
-    <div>
+    <div className='contact-form'>
       <h1>Contact Me</h1>
       <form id="contact-form" className='container' onSubmit={handleSubmit}>
       <div className='flex-row py-2'>

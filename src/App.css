@@ -33,7 +33,6 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  color: var(--light);
   font-family: 'Poiret One', cursive;
   background-size:cover;
   background-image: url('./assets/bg.jpg');
@@ -52,6 +51,7 @@ h6 {
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
+  color: var(--light)
 }
 
 h1 {
@@ -320,4 +320,7 @@ a {
 
 nav li:hover {
   color: bisque;
+}
+.contact-form{
+  color: var(--light)
 }
