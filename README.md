@@ -39,7 +39,7 @@
 
 
 
-  # Deployment Link:
+  # Deployment Link: https://moniquemeas.github.io/react-portfolio/
 
     
  

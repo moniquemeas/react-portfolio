@@ -35,9 +35,9 @@ function Projects() {
 },
 {
   id: 6,  
-  name: "Just Anoter Text Editor",
+  name: "Book Nook",
   image: "img5.jpg",
-  url: "https://intense-springs-58376.herokuapp.com/"
+  url: "https://book-nook2.herokuapp.com/"
 }
   ]
   return (
